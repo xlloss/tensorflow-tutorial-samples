@@ -1,0 +1,13 @@
+models:
+    name: v4cnn_onnx_model
+    platform: onnx
+    model_file_path: /media/sample/tensorflow-tutorial-samples/mnist/v4_cnn/ckpt/model.onnx
+    quantize: false
+    configs:
+      quantized_dtype: w8a8
+      mean_values: [1.0]
+      std_values: [1.0]
+      quant_img_RGB2BGR: false
+      quantized_algorithm: normal
+      quantized_method: channel
+      optimization_level: 0
