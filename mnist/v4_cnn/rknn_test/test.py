@@ -97,6 +97,7 @@ if __name__ == '__main__':
 #    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     img = np.expand_dims(img, 0)
+    img = img.reshape(1, 1, 28, 28)
     print(img.shape);
     # Init runtime environment
     print('--> Init runtime environment')
